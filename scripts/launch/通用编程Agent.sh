@@ -19,9 +19,9 @@ fi
 source venv/bin/activate
 
 # 检查依赖
-if ! python -c "import streamlit" 2>/dev/null; then
+if ! python3.11 -c "import streamlit" 2>/dev/null; then
     echo "⚠️  检测到缺少依赖，正在安装..."
-    pip install -r requirements.txt
+    pip3.11 install -r requirements.txt
 fi
 
 # 启动Web界面
