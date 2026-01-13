@@ -1,0 +1,31 @@
+# AI Agent 项目依赖
+# 核心框架
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-community>=0.3.0
+
+# OpenAI API
+openai>=1.6.1
+
+# 工具和集成
+duckduckgo-search>=4.1.1  # 网络搜索
+python-dotenv>=1.0.0      # 环境变量管理
+requests>=2.31.0          # HTTP请求
+beautifulsoup4>=4.12.2    # 网页解析
+
+# 数据处理
+pandas>=2.1.4
+numpy>=1.26.4
+
+# 向量存储和检索（可选）
+chromadb>=0.4.22
+langchain-chroma>=0.1.0
+
+# 终端美化
+rich>=13.7.0
+colorama>=0.4.6
+
+# Web界面（可选）
+streamlit>=1.29.0
+gradio>=4.13.0
+
