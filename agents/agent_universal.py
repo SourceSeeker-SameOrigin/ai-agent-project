@@ -328,6 +328,11 @@ class UniversalAgent:
                                 
                                 # 检测工具调用
                                 if hasattr(msg, 'tool_calls') and msg.tool_calls:
+                                    # 提取思考内容（AI消息中的content，在工具调用之前）
+                                    thought_content = ""
+                                    if hasattr(msg, 'content') and msg.content:
+                                        thought_content = msg.content
+                                    
                                     for tool_call in msg.tool_calls:
                                         step_count += 1
                                         tool_name = tool_call.get('name', 'unknown')
@@ -338,6 +343,7 @@ class UniversalAgent:
                                             "step": step_count,
                                             "tool": tool_name,
                                             "args": tool_args,
+                                            "thought": thought_content,  # 添加思考内容
                                             "content": f"步骤 {step_count}: {tool_name}"
                                         })
                                         
