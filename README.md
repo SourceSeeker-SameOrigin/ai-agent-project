@@ -17,13 +17,13 @@
 ai_agent_project/
 ├── agents/                          # AI Agent 模块
 │   ├── agent.py                     # 基础 Agent（OpenAI）
-│   ├── agent_china.py                # 中国版 Agent（国内AI服务）
-│   ├── agent_game_dev_hybrid.py     # 游戏开发专用 Agent（保留）
-│   └── agent_universal.py          # ⭐ 通用编程 Agent（新增）
+│   ├── agent_china.py               # 中国版 Agent（国内AI服务）
+│   ├── agent_game.py                # 游戏开发专用 Agent（保留）
+│   └── agent_universal.py           # ⭐ 通用编程 Agent（新增）
 │
 ├── web_ui/                          # Web 界面模块
 │   ├── web_ui_china.py              # 中国版 Web 界面
-│   ├── web_ui_game_dev.py           # 游戏开发 Web 界面
+│   ├── web_ui_game.py               # 游戏开发 Web 界面
 │   ├── web_ui_universal.py          # ⭐ 通用编程 Web 界面（新增）
 │   └── web_react.py                 # ReAct 演示界面
 │
